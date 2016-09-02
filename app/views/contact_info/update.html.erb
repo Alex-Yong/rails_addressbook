@@ -1,0 +1,15 @@
+<h1>Update your info</h1>
+This is your current information:<br>
+<%=@update.id%><br>
+<%=@update.given_name%><br><%=@update.family_name%><br><%=@update.email_address%><br><%=@update.address%>
+<hr>
+Add your new information below:
+<br>
+<form action="/contact_info/updated_info" method="get">
+  <input type="text" name="id" placeholder="Your ID">
+  <input type="text" name="given_name" placeholder="Given Name">
+  <input type="text" name="family_name" placeholder="Family Name">
+  <input type="text" name="email_address" placeholder="Email">
+  <input type="text" name="address" placeholder="Address">
+  <input type="submit" value="Update">
+</form>

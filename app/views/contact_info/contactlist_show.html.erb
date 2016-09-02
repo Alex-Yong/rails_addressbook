@@ -1,0 +1,42 @@
+<br>
+<form action="/contact_info/update" method="get">
+  <input type="text" name="update_id" placeholder="User Id"/>
+  <input type="submit" value="update" />
+</form>
+<br>
+<form action="/contact_info/destroy" method="get">
+  <input type="text" name="destroy_id" placeholder="User Id"/>
+  <input type="submit" value="DESTROY user" />
+</form>
+<br>
+<form action="/contact_info/sort_last" method="get">
+  <input type="submit" value="Sort by last name">
+</form>
+<br>
+<table>
+  <thead>
+    <th>User Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email Address</th>
+    <th>Address</th>
+    <th>Primary Phone</th>
+    <th>Secondary Phone</th>
+    <th>Emergency Phone</th>
+  </thead>
+  <tbody>
+    <% @contacts.each do |contact| %>
+    <tr>
+      <td><%= contact.id %></td>
+      <td><%= contact.given_name %></td>
+      <td><%= contact.family_name %></td>
+      <td><%= contact.email_address %></td>
+      <td><%= contact.address %></td>
+      <td><%= contact. %></td>
+      <td><%= contact.address %></td>
+      <td><%= contact.address %></td>
+
+    </tr>
+    <%end%>
+  </tbody>
+</table>
