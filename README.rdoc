@@ -1,28 +1,4 @@
-== README
+This was our first full-stack Rails app. It consists of a landing page, a list of all entered contacts, an option to add, delete or edit a contact, and a separate table for phone numbers that ties in with the main table. We used pair programming and had about 4 hours to create this, along with Capybara testing. We also used MySQL for the tables.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+At this point it does not have any CSS, but I hope to update the visuals and deploy it soon. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
